@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="index.html">Home</a>
+            <a class="cabecalho_menu_link" href="cadastro.html">Cadastre-se</a>
+            <a class="cabecalho_menu_link" href="banda.html">Sobre a Banda</a>
+            <a class="cabecalho_menu_link" href="turne.html">Turne</a>
+            <a class="cabecalho_menu_link" href="about.html">Sobre Mim</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+                <div class="container">
+                    <div class="content">
+                        <table>
+                            <form name="form1">
+                                <tr>
+                                    <td><h3>Email:</h3></td>
+                                    <td><input type="text" name="login" size="30"></td>
+                                </tr>
+                                <tr>
+                                    <td><h3>Senha:</h3></td>
+                                    <td><input type="password" name="senha" maxlength="8"></td>
+                                </tr>
+                            </form>
+                        </table>
+                        <br>
+                        <h4><p>Gênero:</p></h4>
+            
+                        <input type="radio" name="Genero">Feminino<br>
+                        <input type="radio" name="Genero">Masculino<br>
+                        <input type="radio" name="Genero">Não-Binário<br>
+                    </div>
+                </div>
+                <br>
+                <h4>Qual o seu gênero musical favorito?</h4>
+                <input type="checkbox" name="MusicaR">Rock<br>
+                <input type="checkbox" name="MusicaA">Sertanejo<br>
+                <input type="checkbox" name="MusicaJ">MPB<br>
+                <input type="checkbox" name="MusicaB">Funk<br>
+                
+                <br>
+
+                <h4>Como é a sua relação com a música? Escreva um texto de no mínimo 15 linhas sobre isso:</h4>
+
+                <input type="text" name="NomeUsuario" size="100" value="Minha relação com a música é">
+
+                <br>
+
+                <label for="opcoes"><h4>Sua Faixa Etária de idade:</h4></label>
+                    <select name="opcoes" id="opcoes">
+                        <option value="opcao1">Selecione:</option>
+                        <option value="opcao2">De 10 á 15:</option>
+                        <option value="opcao3">De 15 á 17</option>
+                        <option value="opcao4">Maior de 18</option>
+                    </select>
+
+                <hr>
+
+                <input type="submit" value="Enviar" name="botao" onclick="validar()">
+                <input type="reset" value="Redefinir">
+                <input type="button" class="submitButton" value="Recarregar" onclick="location.reload()">
+        </section>
+    </main>
+
+    <footer class="rodape">
+       <p>Desenvolvido por Moacir Braga Junior.</p>
+    </footer>
+</body>
+</html>

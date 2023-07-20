@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #0096aa;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #e60000;
+    --cor-menu: #d8d526;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+/* Estilos para o menu */
+.cabecalho {
+    background-color: var(--cor-menu);
+    padding: 10px;
+  }
+  
+  .cabecalho_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cabecalho_menu_link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin: 0 10px;
+    padding: 5px;
+  }
+  
+  /* Estilo para o link ativo */
+  .cabecalho_menu_link.active {
+    font-weight: bold;
+    color: #e45826;
+  }  
+
+.apresentacao {
+    padding: 5% 15%;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+.apresentacao_div {
+    padding: 5% 0% 0% 10%;
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-family: var(--fonte-primaria);
+}
+
+.aprsentacao_conteudo_imagem,
+.aprsentacao_conteudo_imagem2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aprensentacao_imagem {
+    border-radius: 15px;
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+/* abaixo o cadastro */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"],
+button,
+.submitButton {
+    background-color: cyan;
+    color: #000000;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.submitButton:hover {
+    background-color: var(--cor-hover);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(to bottom, cyan, rgb(19, 19, 19));
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    animation: colorChange 3s infinite;
+}
+
+hr {
+    border-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+      padding: 10% 5%;
+    }
+  
+    .cabecalho_menu {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .apresentacao {
+      padding: 5% 10%;
+    }
+  
+    .apresentacao_div {
+      padding: 5% 0% 0% 5%;
+    }
+  
+    .aprsentacao_conteudo_imagem,
+    .aprsentacao_conteudo_imagem2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .aprensentacao_imagem {
+      border-radius: 10px;
+    }
+  
+    .rodape {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cabecalho_menu_link {
+      font-size: 0.9rem;
+    }
+  
+    .apresentacao__conteudo__texto {
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: 1024px) {
+        .apresentacao {
+            padding: 5% 20%;
+        }
+    
+        .apresentacao_div {
+            padding: 5% 0% 0% 15%;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .cabecalho {
+            padding: 10% 25%;
+        }
+    }
+  
+    .rodape {
+      padding: 16px;
+      font-size: 0.8rem;
+    }
+  }
